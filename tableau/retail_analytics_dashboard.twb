@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook source-platform="mac" version="18.1">
+  <preferences>
+    <preference name="ui.encoding.shelf.height" value="24" />
+    <preference name="ui.shelf.height" value="26" />
+  </preferences>
+  <datasources>
+
+  <datasource caption="rfm_segments" inline="true" name="rfm_segments" version="18.1">
+    <connection class="textscan" directory="Data" filename="rfm_segments.csv" header="yes" separator=",">
+      <relation name="rfm_segments.csv" table="[rfm_segments#csv]" type="table" />
+    </connection>
+    <column caption="segment" datatype="string" name="[segment]" role="dimension" type="nominal" />
+      <column caption="households" datatype="real" name="[households]" role="measure" type="quantitative" />
+      <column caption="avg_recency_days" datatype="real" name="[avg_recency_days]" role="measure" type="quantitative" />
+      <column caption="median_recency_days" datatype="real" name="[median_recency_days]" role="measure" type="quantitative" />
+      <column caption="avg_frequency_baskets" datatype="real" name="[avg_frequency_baskets]" role="measure" type="quantitative" />
+      <column caption="median_frequency_baskets" datatype="real" name="[median_frequency_baskets]" role="measure" type="quantitative" />
+      <column caption="avg_monetary_sales" datatype="real" name="[avg_monetary_sales]" role="measure" type="quantitative" />
+      <column caption="median_monetary_sales" datatype="real" name="[median_monetary_sales]" role="measure" type="quantitative" />
+      <column caption="total_sales" datatype="real" name="[total_sales]" role="measure" type="quantitative" />
+      <column caption="avg_basket_value" datatype="real" name="[avg_basket_value]" role="measure" type="quantitative" />
+      <column caption="avg_discount_to_sales" datatype="real" name="[avg_discount_to_sales]" role="measure" type="quantitative" />
+      <column caption="household_share_pct" datatype="real" name="[household_share_pct]" role="measure" type="quantitative" />
+      <column caption="top_classification_1_distribution" datatype="string" name="[top_classification_1_distribution]" role="dimension" type="nominal" />
+      <column caption="top_classification_2_distribution" datatype="string" name="[top_classification_2_distribution]" role="dimension" type="nominal" />
+      <column caption="top_classification_3_distribution" datatype="string" name="[top_classification_3_distribution]" role="dimension" type="nominal" />
+      <column caption="top_classification_4_distribution" datatype="string" name="[top_classification_4_distribution]" role="dimension" type="nominal" />
+      <column caption="top_classification_5_distribution" datatype="string" name="[top_classification_5_distribution]" role="dimension" type="nominal" />
+      <column caption="top_HOMEOWNER_DESC_distribution" datatype="string" name="[top_HOMEOWNER_DESC_distribution]" role="dimension" type="nominal" />
+      <column caption="top_KID_CATEGORY_DESC_distribution" datatype="string" name="[top_KID_CATEGORY_DESC_distribution]" role="dimension" type="nominal" />
+  </datasource>
+
+  <datasource caption="promotion_roi" inline="true" name="promotion_roi" version="18.1">
+    <connection class="textscan" directory="Data" filename="promotion_roi.csv" header="yes" separator=",">
+      <relation name="promotion_roi.csv" table="[promotion_roi#csv]" type="table" />
+    </connection>
+    <column caption="campaign" datatype="real" name="[campaign]" role="measure" type="quantitative" />
+      <column caption="promotion_type" datatype="string" name="[promotion_type]" role="dimension" type="nominal" />
+      <column caption="start_day" datatype="real" name="[start_day]" role="measure" type="quantitative" />
+      <column caption="end_day" datatype="real" name="[end_day]" role="measure" type="quantitative" />
+      <column caption="window_days" datatype="real" name="[window_days]" role="measure" type="quantitative" />
+      <column caption="pre_start_day" datatype="real" name="[pre_start_day]" role="measure" type="quantitative" />
+      <column caption="pre_end_day" datatype="real" name="[pre_end_day]" role="measure" type="quantitative" />
+      <column caption="all_households" datatype="real" name="[all_households]" role="measure" type="quantitative" />
+      <column caption="exposed_households" datatype="real" name="[exposed_households]" role="measure" type="quantitative" />
+      <column caption="control_households" datatype="real" name="[control_households]" role="measure" type="quantitative" />
+      <column caption="campaign_products" datatype="real" name="[campaign_products]" role="measure" type="quantitative" />
+      <column caption="treatment_revenue" datatype="real" name="[treatment_revenue]" role="measure" type="quantitative" />
+      <column caption="control_revenue" datatype="real" name="[control_revenue]" role="measure" type="quantitative" />
+      <column caption="treatment_revenue_per_household" datatype="real" name="[treatment_revenue_per_household]" role="measure" type="quantitative" />
+      <column caption="control_revenue_per_household" datatype="real" name="[control_revenue_per_household]" role="measure" type="quantitative" />
+      <column caption="treatment_buyer_rate" datatype="real" name="[treatment_buyer_rate]" role="measure" type="quantitative" />
+      <column caption="control_buyer_rate" datatype="real" name="[control_buyer_rate]" role="measure" type="quantitative" />
+      <column caption="treatment_pre_revenue_per_household_scaled" datatype="real" name="[treatment_pre_revenue_per_household_scaled]" role="measure" type="quantitative" />
+      <column caption="control_pre_revenue_per_household_scaled" datatype="real" name="[control_pre_revenue_per_household_scaled]" role="measure" type="quantitative" />
+      <column caption="lift_pct" datatype="real" name="[lift_pct]" role="measure" type="quantitative" />
+      <column caption="incremental_revenue" datatype="real" name="[incremental_revenue]" role="measure" type="quantitative" />
+      <column caption="discount_investment" datatype="real" name="[discount_investment]" role="measure" type="quantitative" />
+      <column caption="observed_roi" datatype="real" name="[observed_roi]" role="measure" type="quantitative" />
+      <column caption="coupon_redeeming_households" datatype="real" name="[coupon_redeeming_households]" role="measure" type="quantitative" />
+      <column caption="coupon_redemption_rate" datatype="real" name="[coupon_redemption_rate]" role="measure" type="quantitative" />
+      <column caption="true_incremental_flag" datatype="string" name="[true_incremental_flag]" role="dimension" type="nominal" />
+  </datasource>
+
+  <datasource caption="basket_affinity" inline="true" name="basket_affinity" version="18.1">
+    <connection class="textscan" directory="Data" filename="basket_affinity.csv" header="yes" separator=",">
+      <relation name="basket_affinity.csv" table="[basket_affinity#csv]" type="table" />
+    </connection>
+    <column caption="item_a" datatype="string" name="[item_a]" role="dimension" type="nominal" />
+      <column caption="item_b" datatype="string" name="[item_b]" role="dimension" type="nominal" />
+      <column caption="department_a" datatype="string" name="[department_a]" role="dimension" type="nominal" />
+      <column caption="department_b" datatype="string" name="[department_b]" role="dimension" type="nominal" />
+      <column caption="basket_count" datatype="real" name="[basket_count]" role="measure" type="quantitative" />
+      <column caption="pair_basket_count" datatype="real" name="[pair_basket_count]" role="measure" type="quantitative" />
+      <column caption="support" datatype="real" name="[support]" role="measure" type="quantitative" />
+      <column caption="confidence_a_to_b" datatype="real" name="[confidence_a_to_b]" role="measure" type="quantitative" />
+      <column caption="confidence_b_to_a" datatype="real" name="[confidence_b_to_a]" role="measure" type="quantitative" />
+      <column caption="lift" datatype="real" name="[lift]" role="measure" type="quantitative" />
+      <column caption="category_affinity" datatype="string" name="[category_affinity]" role="dimension" type="nominal" />
+      <column caption="anchor_item" datatype="string" name="[anchor_item]" role="dimension" type="nominal" />
+      <column caption="recommended_item" datatype="string" name="[recommended_item]" role="dimension" type="nominal" />
+      <column caption="recommendation_confidence" datatype="real" name="[recommendation_confidence]" role="measure" type="quantitative" />
+      <column caption="cross_sell_opportunity" datatype="string" name="[cross_sell_opportunity]" role="dimension" type="nominal" />
+  </datasource>
+
+  <datasource caption="targeting_recommendation" inline="true" name="targeting_recommendation" version="18.1">
+    <connection class="textscan" directory="Data" filename="targeting_recommendation.csv" header="yes" separator=",">
+      <relation name="targeting_recommendation.csv" table="[targeting_recommendation#csv]" type="table" />
+    </connection>
+    <column caption="segment" datatype="string" name="[segment]" role="dimension" type="nominal" />
+      <column caption="campaign" datatype="real" name="[campaign]" role="measure" type="quantitative" />
+      <column caption="promotion_type" datatype="string" name="[promotion_type]" role="dimension" type="nominal" />
+      <column caption="segment_households" datatype="real" name="[segment_households]" role="measure" type="quantitative" />
+      <column caption="exposed_households" datatype="real" name="[exposed_households]" role="measure" type="quantitative" />
+      <column caption="control_households" datatype="real" name="[control_households]" role="measure" type="quantitative" />
+      <column caption="campaign_products" datatype="real" name="[campaign_products]" role="measure" type="quantitative" />
+      <column caption="treatment_revenue_per_household" datatype="real" name="[treatment_revenue_per_household]" role="measure" type="quantitative" />
+      <column caption="control_revenue_per_household" datatype="real" name="[control_revenue_per_household]" role="measure" type="quantitative" />
+      <column caption="treatment_pre_revenue_per_household_scaled" datatype="real" name="[treatment_pre_revenue_per_household_scaled]" role="measure" type="quantitative" />
+      <column caption="control_pre_revenue_per_household_scaled" datatype="real" name="[control_pre_revenue_per_household_scaled]" role="measure" type="quantitative" />
+      <column caption="treatment_buyer_rate" datatype="real" name="[treatment_buyer_rate]" role="measure" type="quantitative" />
+      <column caption="control_buyer_rate" datatype="real" name="[control_buyer_rate]" role="measure" type="quantitative" />
+      <column caption="lift_pct" datatype="real" name="[lift_pct]" role="measure" type="quantitative" />
+      <column caption="incremental_per_household" datatype="real" name="[incremental_per_household]" role="measure" type="quantitative" />
+      <column caption="estimated_incremental_revenue" datatype="real" name="[estimated_incremental_revenue]" role="measure" type="quantitative" />
+      <column caption="coupon_redemption_rate" datatype="real" name="[coupon_redemption_rate]" role="measure" type="quantitative" />
+      <column caption="targeting_opportunity_flag" datatype="string" name="[targeting_opportunity_flag]" role="dimension" type="nominal" />
+      <column caption="recommendation_strength" datatype="string" name="[recommendation_strength]" role="dimension" type="nominal" />
+      <column caption="targeting_recommendation" datatype="string" name="[targeting_recommendation]" role="dimension" type="nominal" />
+  </datasource>
+
+  <datasource caption="coupon_dependency" inline="true" name="coupon_dependency" version="18.1">
+    <connection class="textscan" directory="Data" filename="coupon_dependency.csv" header="yes" separator=",">
+      <relation name="coupon_dependency.csv" table="[coupon_dependency#csv]" type="table" />
+    </connection>
+    <column caption="segment" datatype="string" name="[segment]" role="dimension" type="nominal" />
+      <column caption="households" datatype="real" name="[households]" role="measure" type="quantitative" />
+      <column caption="coupon_households" datatype="real" name="[coupon_households]" role="measure" type="quantitative" />
+      <column caption="avg_total_sales" datatype="real" name="[avg_total_sales]" role="measure" type="quantitative" />
+      <column caption="avg_coupon_dependency_ratio" datatype="real" name="[avg_coupon_dependency_ratio]" role="measure" type="quantitative" />
+      <column caption="avg_deal_dependency_ratio" datatype="real" name="[avg_deal_dependency_ratio]" role="measure" type="quantitative" />
+      <column caption="avg_coupon_discount_abs" datatype="real" name="[avg_coupon_discount_abs]" role="measure" type="quantitative" />
+      <column caption="avg_pre_90d_sales" datatype="real" name="[avg_pre_90d_sales]" role="measure" type="quantitative" />
+      <column caption="avg_post_30d_sales" datatype="real" name="[avg_post_30d_sales]" role="measure" type="quantitative" />
+      <column caption="avg_post_60d_sales" datatype="real" name="[avg_post_60d_sales]" role="measure" type="quantitative" />
+      <column caption="avg_post_90d_sales" datatype="real" name="[avg_post_90d_sales]" role="measure" type="quantitative" />
+      <column caption="post_30d_repeat_households" datatype="real" name="[post_30d_repeat_households]" role="measure" type="quantitative" />
+      <column caption="post_60d_repeat_households" datatype="real" name="[post_60d_repeat_households]" role="measure" type="quantitative" />
+      <column caption="post_90d_repeat_households" datatype="real" name="[post_90d_repeat_households]" role="measure" type="quantitative" />
+      <column caption="full_price_post_90d_households" datatype="real" name="[full_price_post_90d_households]" role="measure" type="quantitative" />
+      <column caption="deal_only_after_coupon_households" datatype="real" name="[deal_only_after_coupon_households]" role="measure" type="quantitative" />
+      <column caption="avg_post_90d_incremental_vs_pre_90d" datatype="real" name="[avg_post_90d_incremental_vs_pre_90d]" role="measure" type="quantitative" />
+      <column caption="total_post_90d_incremental_vs_pre_90d" datatype="real" name="[total_post_90d_incremental_vs_pre_90d]" role="measure" type="quantitative" />
+      <column caption="avg_subsidy_efficiency" datatype="real" name="[avg_subsidy_efficiency]" role="measure" type="quantitative" />
+      <column caption="coupon_user_rate" datatype="real" name="[coupon_user_rate]" role="measure" type="quantitative" />
+      <column caption="post_30d_repeat_rate_among_coupon_users" datatype="real" name="[post_30d_repeat_rate_among_coupon_users]" role="measure" type="quantitative" />
+      <column caption="post_60d_repeat_rate_among_coupon_users" datatype="real" name="[post_60d_repeat_rate_among_coupon_users]" role="measure" type="quantitative" />
+      <column caption="post_90d_repeat_rate_among_coupon_users" datatype="real" name="[post_90d_repeat_rate_among_coupon_users]" role="measure" type="quantitative" />
+      <column caption="full_price_post_90d_rate_among_coupon_users" datatype="real" name="[full_price_post_90d_rate_among_coupon_users]" role="measure" type="quantitative" />
+      <column caption="deal_only_after_coupon_rate" datatype="real" name="[deal_only_after_coupon_rate]" role="measure" type="quantitative" />
+      <column caption="coupon_user_share" datatype="real" name="[coupon_user_share]" role="measure" type="quantitative" />
+      <column caption="Insufficient Post Window" datatype="real" name="[Insufficient Post Window]" role="measure" type="quantitative" />
+      <column caption="Keep Deal" datatype="real" name="[Keep Deal]" role="measure" type="quantitative" />
+      <column caption="No Deal Needed" datatype="real" name="[No Deal Needed]" role="measure" type="quantitative" />
+      <column caption="Reduce Deal" datatype="real" name="[Reduce Deal]" role="measure" type="quantitative" />
+      <column caption="Stop Subsidy" datatype="real" name="[Stop Subsidy]" role="measure" type="quantitative" />
+      <column caption="Test Smaller Deal" datatype="real" name="[Test Smaller Deal]" role="measure" type="quantitative" />
+      <column caption="Winback Test" datatype="real" name="[Winback Test]" role="measure" type="quantitative" />
+      <column caption="segment_coupon_strategy" datatype="string" name="[segment_coupon_strategy]" role="dimension" type="nominal" />
+  </datasource>
+
+  <datasource caption="coupon_household_scores" inline="true" name="coupon_household_scores" version="18.1">
+    <connection class="textscan" directory="Data" filename="coupon_household_scores.csv" header="yes" separator=",">
+      <relation name="coupon_household_scores.csv" table="[coupon_household_scores#csv]" type="table" />
+    </connection>
+    <column caption="household_key" datatype="real" name="[household_key]" role="measure" type="quantitative" />
+      <column caption="total_sales" datatype="real" name="[total_sales]" role="measure" type="quantitative" />
+      <column caption="total_baskets" datatype="real" name="[total_baskets]" role="measure" type="quantitative" />
+      <column caption="total_purchase_days" datatype="real" name="[total_purchase_days]" role="measure" type="quantitative" />
+      <column caption="first_purchase_day" datatype="real" name="[first_purchase_day]" role="measure" type="quantitative" />
+      <column caption="last_purchase_day" datatype="real" name="[last_purchase_day]" role="measure" type="quantitative" />
+      <column caption="coupon_discount_abs" datatype="real" name="[coupon_discount_abs]" role="measure" type="quantitative" />
+      <column caption="deal_discount_abs" datatype="real" name="[deal_discount_abs]" role="measure" type="quantitative" />
+      <column caption="coupon_sales" datatype="real" name="[coupon_sales]" role="measure" type="quantitative" />
+      <column caption="deal_sales" datatype="real" name="[deal_sales]" role="measure" type="quantitative" />
+      <column caption="coupon_baskets" datatype="real" name="[coupon_baskets]" role="measure" type="quantitative" />
+      <column caption="deal_baskets" datatype="real" name="[deal_baskets]" role="measure" type="quantitative" />
+      <column caption="first_coupon_day" datatype="real" name="[first_coupon_day]" role="measure" type="quantitative" />
+      <column caption="last_coupon_day" datatype="real" name="[last_coupon_day]" role="measure" type="quantitative" />
+      <column caption="coupon_redemptions" datatype="real" name="[coupon_redemptions]" role="measure" type="quantitative" />
+      <column caption="redeemed_campaigns" datatype="real" name="[redeemed_campaigns]" role="measure" type="quantitative" />
+      <column caption="coupon_user_flag" datatype="string" name="[coupon_user_flag]" role="dimension" type="nominal" />
+      <column caption="coupon_dependency_ratio" datatype="real" name="[coupon_dependency_ratio]" role="measure" type="quantitative" />
+      <column caption="deal_dependency_ratio" datatype="real" name="[deal_dependency_ratio]" role="measure" type="quantitative" />
+      <column caption="pre_90d_sales" datatype="real" name="[pre_90d_sales]" role="measure" type="quantitative" />
+      <column caption="post_30d_sales" datatype="real" name="[post_30d_sales]" role="measure" type="quantitative" />
+      <column caption="post_30d_baskets" datatype="real" name="[post_30d_baskets]" role="measure" type="quantitative" />
+      <column caption="post_60d_sales" datatype="real" name="[post_60d_sales]" role="measure" type="quantitative" />
+      <column caption="post_60d_baskets" datatype="real" name="[post_60d_baskets]" role="measure" type="quantitative" />
+      <column caption="post_90d_sales" datatype="real" name="[post_90d_sales]" role="measure" type="quantitative" />
+      <column caption="post_90d_baskets" datatype="real" name="[post_90d_baskets]" role="measure" type="quantitative" />
+      <column caption="full_price_post_90d_sales" datatype="real" name="[full_price_post_90d_sales]" role="measure" type="quantitative" />
+      <column caption="deal_post_90d_sales" datatype="real" name="[deal_post_90d_sales]" role="measure" type="quantitative" />
+      <column caption="available_post_days" datatype="real" name="[available_post_days]" role="measure" type="quantitative" />
+      <column caption="post_coupon_repeat_flag" datatype="string" name="[post_coupon_repeat_flag]" role="dimension" type="nominal" />
+      <column caption="full_price_after_coupon_flag" datatype="string" name="[full_price_after_coupon_flag]" role="dimension" type="nominal" />
+      <column caption="deal_only_after_coupon_flag" datatype="string" name="[deal_only_after_coupon_flag]" role="dimension" type="nominal" />
+      <column caption="post_90d_incremental_vs_pre_90d" datatype="real" name="[post_90d_incremental_vs_pre_90d]" role="measure" type="quantitative" />
+      <column caption="subsidy_efficiency" datatype="real" name="[subsidy_efficiency]" role="measure" type="quantitative" />
+      <column caption="segment" datatype="string" name="[segment]" role="dimension" type="nominal" />
+      <column caption="recency_days" datatype="real" name="[recency_days]" role="measure" type="quantitative" />
+      <column caption="frequency_baskets" datatype="real" name="[frequency_baskets]" role="measure" type="quantitative" />
+      <column caption="monetary_sales" datatype="real" name="[monetary_sales]" role="measure" type="quantitative" />
+      <column caption="avg_basket_value" datatype="real" name="[avg_basket_value]" role="measure" type="quantitative" />
+      <column caption="deal_strategy_recommendation" datatype="string" name="[deal_strategy_recommendation]" role="dimension" type="nominal" />
+  </datasource>
+  </datasources>
+  <worksheets>
+
+  <worksheet name="RFM Segment Distribution">
+    <table>
+      <view>
+        <datasources>
+          <datasource caption="rfm_segments" name="rfm_segments" />
+        </datasources>
+        <aggregation value="true" />
+      </view>
+      <style />
+      <panes>
+        <pane>
+          <mark class="Bar" />
+        </pane>
+      </panes>
+      <rows>[rfm_segments].[segment]</rows>
+      <cols>SUM([rfm_segments].[households])</cols>
+    </table>
+  </worksheet>
+
+  <worksheet name="Promotion ROI Ranking">
+    <table>
+      <view>
+        <datasources>
+          <datasource caption="promotion_roi" name="promotion_roi" />
+        </datasources>
+        <aggregation value="true" />
+      </view>
+      <style />
+      <panes>
+        <pane>
+          <mark class="Bar" />
+        </pane>
+      </panes>
+      <rows>[promotion_roi].[campaign]</rows>
+      <cols>SUM([promotion_roi].[incremental_revenue])</cols>
+    </table>
+  </worksheet>
+
+  <worksheet name="Basket Affinity Lift">
+    <table>
+      <view>
+        <datasources>
+          <datasource caption="basket_affinity" name="basket_affinity" />
+        </datasources>
+        <aggregation value="true" />
+      </view>
+      <style />
+      <panes>
+        <pane>
+          <mark class="Bar" />
+        </pane>
+      </panes>
+      <rows>[basket_affinity].[category_affinity]</rows>
+      <cols>SUM([basket_affinity].[lift])</cols>
+    </table>
+  </worksheet>
+
+  <worksheet name="Targeting Recommendation Revenue">
+    <table>
+      <view>
+        <datasources>
+          <datasource caption="targeting_recommendation" name="targeting_recommendation" />
+        </datasources>
+        <aggregation value="true" />
+      </view>
+      <style />
+      <panes>
+        <pane>
+          <mark class="Bar" />
+        </pane>
+      </panes>
+      <rows>[targeting_recommendation].[segment]</rows>
+      <cols>SUM([targeting_recommendation].[estimated_incremental_revenue])</cols>
+    </table>
+  </worksheet>
+
+  <worksheet name="Coupon Strategy Mix">
+    <table>
+      <view>
+        <datasources>
+          <datasource caption="coupon_dependency" name="coupon_dependency" />
+        </datasources>
+        <aggregation value="true" />
+      </view>
+      <style />
+      <panes>
+        <pane>
+          <mark class="Bar" />
+        </pane>
+      </panes>
+      <rows>[coupon_dependency].[segment]</rows>
+      <cols>SUM([coupon_dependency].[coupon_households])</cols>
+    </table>
+  </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name="Retail Analytics Overview">
+      <style />
+      <size maxheight="1100" maxwidth="1200" minheight="1100" minwidth="1200" />
+      <zones>
+        <zone h="1100" id="1" type="layout-flow" w="1200" x="0" y="0">
+          <zone h="450" id="2" name="RFM Segment Distribution" type="worksheet" w="600" x="0" y="0" />
+          <zone h="450" id="3" name="Promotion ROI Ranking" type="worksheet" w="600" x="600" y="0" />
+          <zone h="450" id="4" name="Basket Affinity Lift" type="worksheet" w="600" x="0" y="450" />
+          <zone h="450" id="5" name="Targeting Recommendation Revenue" type="worksheet" w="600" x="600" y="450" />
+          <zone h="200" id="6" name="Coupon Strategy Mix" type="worksheet" w="1200" x="0" y="900" />
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+</workbook>

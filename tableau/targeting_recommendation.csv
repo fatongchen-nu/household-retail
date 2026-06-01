@@ -1,0 +1,88 @@
+segment,campaign,promotion_type,segment_households,exposed_households,control_households,campaign_products,treatment_revenue_per_household,control_revenue_per_household,treatment_pre_revenue_per_household_scaled,control_pre_revenue_per_household_scaled,treatment_buyer_rate,control_buyer_rate,lift_pct,incremental_per_household,estimated_incremental_revenue,coupon_redemption_rate,targeting_opportunity_flag,recommendation_strength,targeting_recommendation
+Big Spenders,18,TypeA,23,19,4,35513,364.750526,218.4225,338.920526,305.9825,1.0,0.75,66.99311,113.39,2154.41,0.263158,True,High,Target Big Spenders with TypeA style offers
+Loyal Customers,8,TypeA,325,225,100,17178,119.333733,71.0134,123.522844,80.6104,0.977778,0.93,68.043965,5.407889,1216.775,0.142222,True,High,Target Loyal Customers with TypeA style offers
+Loyal Customers,13,TypeA,325,248,77,35616,158.167581,110.124675,159.270444,114.816494,0.983871,0.974026,43.625922,3.588955,890.060909,0.197581,True,High,Target Loyal Customers with TypeA style offers
+Champions,5,TypeB,512,79,433,443,7.500633,0.518245,3.885443,0.660346,0.278481,0.057737,1347.314639,3.757291,296.826028,0.063291,True,High,Target Champions with TypeB style offers
+Potential Loyalists,13,TypeA,302,72,230,35616,131.834861,66.245957,132.963333,70.677174,0.930556,0.904348,99.008163,3.302745,237.797652,0.152778,True,High,Target Potential Loyalists with TypeA style offers
+Champions,30,TypeA,512,120,392,3205,28.612583,28.164031,26.391,27.738495,0.966667,0.941327,1.592644,1.796048,215.525714,0.15,True,Medium,Target Champions with TypeA style offers
+Loyal Customers,30,TypeA,325,73,252,3205,26.60411,15.435,23.34863,15.099722,0.945205,0.813492,72.362226,2.920202,213.174722,0.123288,True,High,Target Loyal Customers with TypeA style offers
+Champions,25,TypeB,512,117,395,826,14.112308,7.816937,11.935983,7.169063,0.888889,0.706329,80.535013,1.528451,178.82881,0.162393,True,High,Target Champions with TypeB style offers
+Potential Loyalists,8,TypeA,302,85,217,17178,90.801647,45.148249,88.071765,44.454608,0.952941,0.824885,101.118868,2.036242,173.080553,0.094118,True,High,Target Potential Loyalists with TypeA style offers
+Champions,19,TypeB,512,64,448,375,11.06875,1.260491,8.650938,1.503393,0.625,0.080357,778.129981,2.660714,170.285714,0.171875,True,High,Target Champions with TypeB style offers
+Champions,23,TypeB,512,108,404,767,13.340833,5.268787,10.679444,4.17901,0.805556,0.544554,153.205017,1.571612,169.734059,0.138889,True,High,Target Champions with TypeB style offers
+Champions,26,TypeA,512,113,399,3396,28.505575,26.405238,22.152832,21.421629,0.973451,0.929825,7.954244,1.369134,154.71218,0.185841,True,Medium,Target Champions with TypeA style offers
+Loyal Customers,10,TypeB,325,24,301,393,8.618333,0.476013,3.790833,0.643987,0.333333,0.046512,1710.523683,4.995473,119.891362,0.125,True,High,Target Loyal Customers with TypeB style offers
+Champions,20,TypeC,512,140,372,609,6.464214,3.437688,5.114,2.928548,0.714286,0.518817,88.039577,0.841075,117.75043,0.107143,True,High,Target Champions with TypeC style offers
+Needs Attention,26,TypeA,448,39,409,3396,9.720513,6.496235,5.532564,5.193227,0.641026,0.557457,49.63303,2.884941,112.512714,0.025641,True,High,Target Needs Attention with TypeA style offers
+Champions,29,TypeB,512,37,475,689,14.013514,7.435242,10.457838,6.357516,0.837838,0.591579,88.474206,2.477949,91.684126,0.135135,True,High,Target Champions with TypeB style offers
+Loyal Customers,9,TypeB,325,37,288,825,6.480811,2.814583,4.263784,2.962118,0.540541,0.326389,130.258267,2.364562,87.488785,0.135135,True,High,Target Loyal Customers with TypeB style offers
+Champions,16,TypeB,512,100,412,1025,3.5028,0.883908,2.5498,0.78517,0.43,0.182039,296.285691,0.854262,85.426214,0.11,True,High,Target Champions with TypeB style offers
+Potential Loyalists,30,TypeA,302,28,274,3205,16.856786,8.67,11.911071,6.697409,0.785714,0.624088,94.426594,2.973123,83.247445,0.107143,True,High,Target Potential Loyalists with TypeA style offers
+Loyal Customers,29,TypeB,325,23,302,689,12.103478,5.119669,7.916087,4.265464,0.695652,0.44702,136.411349,3.333186,76.663278,0.173913,True,High,Target Loyal Customers with TypeB style offers
+Loyal Customers,11,TypeB,325,45,280,278,2.851778,0.77625,1.408,0.837429,0.4,0.207143,267.37878,1.504956,67.723036,0.044444,True,High,Target Loyal Customers with TypeB style offers
+Champions,12,TypeB,512,80,432,620,6.14175,4.801134,5.364125,4.79831,0.8875,0.740741,27.922896,0.774801,61.984074,0.075,True,High,Target Champions with TypeB style offers
+At Risk High Value,14,TypeC,229,27,202,714,4.236667,1.809802,2.995926,2.459356,0.666667,0.336634,134.095592,1.890295,51.03797,0.0,True,Medium,Target At Risk High Value with TypeC style offers
+Champions,4,TypeB,512,49,463,200,2.470204,1.723305,1.909388,1.93987,0.571429,0.386609,43.341123,0.777382,38.091728,0.081633,True,High,Target Champions with TypeB style offers
+Potential Loyalists,29,TypeB,302,18,284,689,6.007778,1.942183,4.126111,1.962923,0.333333,0.278169,209.331174,1.902406,34.24331,0.055556,True,High,Target Potential Loyalists with TypeB style offers
+Champions,22,TypeB,512,164,348,1917,7.918598,5.985,7.48189,5.7425,0.756098,0.675287,32.307395,0.194207,31.85,0.079268,True,High,Target Champions with TypeB style offers
+At Risk High Value,22,TypeB,229,29,200,1917,5.236552,2.59035,4.890345,3.10495,0.586207,0.44,102.156146,0.860807,24.9634,0.068966,True,High,Target At Risk High Value with TypeB style offers
+At Risk High Value,16,TypeB,229,26,203,1025,2.186538,0.606059,1.204615,0.583645,0.269231,0.123153,260.779735,0.959509,24.947241,0.115385,True,High,Target At Risk High Value with TypeB style offers
+Champions,9,TypeB,512,71,441,825,10.09493,4.787914,9.114085,4.118844,0.788732,0.553288,110.841923,0.311775,22.136009,0.112676,True,High,Target Champions with TypeB style offers
+Loyal Customers,12,TypeB,325,34,291,620,5.707353,2.727663,4.817647,2.465979,0.852941,0.549828,109.239648,0.628022,21.352749,0.058824,True,High,Target Loyal Customers with TypeB style offers
+Potential Loyalists,22,TypeB,302,16,286,1917,3.645625,2.077587,2.565,2.11958,0.75,0.370629,75.473965,1.122618,17.961888,0.0,True,Medium,Target Potential Loyalists with TypeB style offers
+Hibernating,26,TypeA,633,23,610,3396,5.256087,2.53241,4.282609,2.33323,0.391304,0.329508,107.552778,0.774298,17.808852,0.043478,True,High,Target Hibernating with TypeA style offers
+Champions,6,TypeC,512,39,473,18,0.411026,0.140402,0.176154,0.164609,0.051282,0.02537,192.749779,0.259079,10.10408,0.025641,True,High,Target Champions with TypeC style offers
+At Risk High Value,12,TypeB,229,17,212,620,3.683529,2.586934,3.486471,2.938915,0.705882,0.490566,42.389774,0.54904,9.333679,0.058824,True,High,Target At Risk High Value with TypeB style offers
+Champions,21,TypeB,512,34,478,242,3.339412,0.671109,2.996471,0.59477,0.470588,0.117155,397.596192,0.266602,9.064477,0.088235,True,High,Target Champions with TypeB style offers
+Champions,14,TypeC,512,127,385,714,6.45189,3.244494,6.567165,3.425766,0.779528,0.498701,98.856609,0.065997,8.381636,0.086614,True,High,Target Champions with TypeC style offers
+At Risk High Value,10,TypeB,229,15,214,393,1.252,0.793037,1.146,1.165748,0.2,0.074766,57.87402,0.47871,7.180654,0.0,True,Medium,Target At Risk High Value with TypeB style offers
+Needs Attention,30,TypeA,448,46,402,3205,7.245435,6.062587,6.411739,5.35408,0.73913,0.572139,19.51061,0.125188,5.758657,0.065217,True,Medium,Target Needs Attention with TypeA style offers
+Needs Attention,29,TypeB,448,15,433,689,8.266,1.599561,7.906667,1.329076,0.933333,0.251732,416.766723,0.088848,1.332725,0.066667,True,High,Target Needs Attention with TypeB style offers
+Potential Loyalists,26,TypeA,302,21,281,3396,12.122381,5.507509,12.415238,5.823132,0.761905,0.565836,120.106425,0.022766,0.478078,0.0,True,Medium,Target Potential Loyalists with TypeA style offers
+Loyal Customers,23,TypeB,325,40,285,767,12.002,3.275789,11.202,2.479439,0.825,0.37193,266.384961,0.003649,0.145965,0.15,True,High,Target Loyal Customers with TypeB style offers
+Champions,18,TypeA,512,447,65,35513,314.5834,284.309385,286.870112,270.055846,0.997763,1.0,10.648265,13.45975,6016.508308,0.259508,False,Low,Do not prioritize Champions for TypeA style offers
+Champions,13,TypeA,512,449,63,35616,249.465924,260.456032,256.940958,272.00619,0.993318,0.984127,-4.219563,4.075125,1829.73127,0.23608,False,Low,Do not prioritize Champions for TypeA style offers
+Big Spenders,13,TypeA,23,16,7,35616,243.564375,270.117143,242.510625,292.938571,0.9375,1.0,-9.830094,23.875179,382.002857,0.375,False,Low,Do not prioritize Big Spenders for TypeA style offers
+At Risk High Value,18,TypeA,229,171,58,35513,144.095205,150.82,142.818772,151.468276,0.906433,0.913793,-4.458822,1.924709,329.125172,0.122807,False,Low,Do not prioritize At Risk High Value for TypeA style offers
+Champions,2,TypeB,512,16,496,301,1.88875,2.400726,1.928125,2.655625,0.5,0.417339,-21.325876,0.215524,3.448387,0.125,False,Low,Do not prioritize Champions for TypeB style offers
+Loyal Customers,16,TypeB,325,40,285,1025,2.609,0.670246,2.66225,0.693123,0.4,0.112281,289.260287,-0.030373,-1.214912,0.125,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Loyal Customers,25,TypeB,325,38,287,826,10.331316,4.151986,10.036053,3.810732,0.842105,0.515679,148.828287,-0.045991,-1.747666,0.105263,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Potential Loyalists,12,TypeB,302,18,284,620,5.249444,1.340563,5.052222,1.017852,0.611111,0.334507,291.58495,-0.125489,-2.258803,0.0,False,Low,Do not prioritize Potential Loyalists for TypeB style offers
+Needs Attention,9,TypeB,448,19,429,825,4.187368,1.102797,4.486316,1.247669,0.473684,0.212121,279.704302,-0.154076,-2.927436,0.052632,False,Low,Do not prioritize Needs Attention for TypeB style offers
+Loyal Customers,6,TypeC,325,16,309,18,0.0,0.081521,0.28625,0.103754,0.0,0.012945,-100.0,-0.264017,-4.224272,0.0,False,Low,Do not prioritize Loyal Customers for TypeC style offers
+At Risk High Value,7,TypeB,229,36,193,259,0.692222,0.375285,0.799444,0.225803,0.194444,0.067358,84.452421,-0.256704,-9.241347,0.027778,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+At Risk High Value,11,TypeB,229,38,191,278,0.571316,0.860157,0.727368,0.755654,0.184211,0.188482,-33.580062,-0.260555,-9.901099,0.0,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+At Risk High Value,26,TypeA,229,60,169,3396,17.4605,16.804675,14.6775,13.689527,0.833333,0.863905,3.902637,-0.332148,-19.928876,0.05,False,Low,Do not prioritize At Risk High Value for TypeA style offers
+Loyal Customers,17,TypeB,325,41,284,713,4.645122,2.25588,5.385366,2.445176,0.634146,0.292254,105.911723,-0.550948,-22.588873,0.04878,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Loyal Customers,20,TypeC,325,42,283,609,5.319524,2.176254,5.23119,1.486325,0.714286,0.339223,144.434831,-0.601596,-25.267032,0.095238,False,Low,Do not prioritize Loyal Customers for TypeC style offers
+At Risk High Value,17,TypeB,229,19,210,713,3.601579,1.702095,5.524737,2.230238,0.526316,0.257143,111.596794,-1.395015,-26.505286,0.052632,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+Loyal Customers,14,TypeC,325,38,287,714,6.613947,1.908746,7.421053,1.963206,0.736842,0.348432,246.507529,-0.752645,-28.600523,0.105263,False,Low,Do not prioritize Loyal Customers for TypeC style offers
+At Risk High Value,9,TypeB,229,24,205,825,5.1125,2.607756,6.412083,2.637854,0.583333,0.37561,96.049776,-1.269486,-30.467659,0.166667,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+Hibernating,30,TypeA,633,21,612,3205,3.744762,2.401961,5.102857,2.272794,0.428571,0.312092,55.904373,-1.487262,-31.2325,0.0,False,Low,Do not prioritize Hibernating for TypeA style offers
+Loyal Customers,21,TypeB,325,16,309,242,1.235625,0.159385,3.600625,0.341036,0.3125,0.045307,675.244924,-2.18335,-34.933592,0.0,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+At Risk High Value,20,TypeC,229,32,197,609,3.029687,1.814873,4.079375,1.578832,0.5,0.365482,66.936603,-1.285728,-41.143299,0.0,False,Low,Do not prioritize At Risk High Value for TypeC style offers
+Champions,11,TypeB,512,112,400,278,1.871518,1.649,2.392679,1.74045,0.357143,0.3075,13.494109,-0.429711,-48.1276,0.035714,False,Low,Do not prioritize Champions for TypeB style offers
+Loyal Customers,7,TypeB,325,40,285,259,0.4515,0.373298,1.716,0.341158,0.1,0.073684,20.948867,-1.29664,-51.865614,0.025,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Champions,7,TypeB,512,97,415,259,0.830412,0.698819,1.425155,0.705253,0.175258,0.13253,18.830776,-0.588309,-57.065928,0.030928,False,Low,Do not prioritize Champions for TypeB style offers
+Potential Loyalists,9,TypeB,302,18,284,825,3.153333,1.747887,6.0,1.14838,0.444444,0.257042,80.408273,-3.446174,-62.031127,0.111111,False,Low,Do not prioritize Potential Loyalists for TypeB style offers
+Loyal Customers,22,TypeB,325,52,273,1917,7.370192,3.406337,8.397885,2.930769,0.807692,0.501832,116.367092,-1.50326,-78.169524,0.038462,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Champions,10,TypeB,512,69,443,393,5.730725,0.975621,6.742754,0.853386,0.391304,0.103837,487.392646,-1.134264,-78.264199,0.101449,False,Low,Do not prioritize Champions for TypeB style offers
+At Risk High Value,5,TypeB,229,32,197,443,2.650312,0.724365,5.042812,0.466142,0.1875,0.025381,265.880562,-2.650723,-84.823147,0.03125,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+Loyal Customers,19,TypeB,325,26,299,375,13.713077,0.730301,17.813462,0.766522,0.461538,0.046823,1777.729438,-4.064164,-105.668261,0.038462,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Loyal Customers,26,TypeA,325,69,256,3396,22.014928,13.265625,20.11942,9.826719,0.942029,0.785156,65.954695,-1.543399,-106.494531,0.057971,False,Low,Do not prioritize Loyal Customers for TypeA style offers
+Champions,17,TypeB,512,116,396,713,7.442328,3.100606,8.404569,3.064242,0.681034,0.396465,140.028157,-0.998605,-115.838182,0.12069,False,Low,Do not prioritize Champions for TypeB style offers
+At Risk High Value,24,TypeB,229,15,214,1887,9.184,2.520888,21.431333,4.119486,0.533333,0.158879,264.316088,-10.648735,-159.731028,0.0,False,Low,Do not prioritize At Risk High Value for TypeB style offers
+At Risk High Value,30,TypeA,229,66,163,3205,15.614242,18.628405,16.526515,16.486012,0.80303,0.883436,-16.180465,-3.054665,-201.607914,0.030303,False,Low,Do not prioritize At Risk High Value for TypeA style offers
+Loyal Customers,5,TypeB,325,36,289,443,6.885,0.279308,13.013056,0.312249,0.25,0.020761,2365.02106,-6.095114,-219.424118,0.055556,False,Low,Do not prioritize Loyal Customers for TypeB style offers
+Champions,24,TypeB,512,60,452,1887,28.474333,7.963695,31.7755,7.553451,0.816667,0.404867,257.551795,-3.71141,-222.684602,0.083333,False,Low,Do not prioritize Champions for TypeB style offers
+Needs Attention,13,TypeA,448,102,346,35616,75.446471,59.247197,75.803431,57.269422,0.892157,0.82659,27.341841,-2.334735,-238.143006,0.04902,False,Low,Do not prioritize Needs Attention for TypeA style offers
+Hibernating,18,TypeA,633,29,604,35513,45.982414,38.386258,52.232414,30.930662,0.827586,0.663907,19.788737,-13.705596,-397.462285,0.034483,False,Low,Do not prioritize Hibernating for TypeA style offers
+Hibernating,8,TypeA,633,47,586,17178,32.786809,19.662372,39.341277,17.739659,0.765957,0.544369,66.748999,-8.477181,-398.427526,0.06383,False,Low,Do not prioritize Hibernating for TypeA style offers
+Big Spenders,8,TypeA,23,16,7,17178,189.125625,178.818571,189.09875,146.554286,1.0,1.0,5.763973,-32.237411,-515.798571,0.125,False,Low,Do not prioritize Big Spenders for TypeA style offers
+Loyal Customers,18,TypeA,325,247,78,35513,182.842065,162.185769,177.082955,154.100385,0.991903,0.948718,12.736195,-2.326275,-574.59,0.17004,False,Low,Do not prioritize Loyal Customers for TypeA style offers
+Needs Attention,8,TypeA,448,133,315,17178,55.440602,36.98746,59.324361,33.196635,0.887218,0.75873,49.890263,-7.674585,-1020.719778,0.037594,False,Low,Do not prioritize Needs Attention for TypeA style offers
+Needs Attention,18,TypeA,448,105,343,35513,99.610476,68.575743,107.87,63.464344,0.895238,0.836735,45.256138,-13.370923,-1403.946939,0.07619,False,Low,Do not prioritize Needs Attention for TypeA style offers
+At Risk High Value,13,TypeA,229,178,51,35616,130.45809,111.170392,153.60809,126.323725,0.949438,0.941176,17.349671,-7.996667,-1423.406667,0.101124,False,Low,Do not prioritize At Risk High Value for TypeA style offers
+Potential Loyalists,18,TypeA,302,114,188,35513,148.933684,87.037926,149.398684,72.718191,0.982456,0.925532,71.11355,-14.784734,-1685.459681,0.184211,False,Low,Do not prioritize Potential Loyalists for TypeA style offers
+At Risk High Value,8,TypeA,229,154,75,17178,120.737013,102.110933,129.368636,98.2632,0.967532,0.946667,18.241024,-12.479357,-1921.820933,0.116883,False,Low,Do not prioritize At Risk High Value for TypeA style offers
+Champions,8,TypeA,512,416,96,17178,182.480697,189.526979,184.595938,164.74625,0.992788,1.0,-3.717825,-26.89597,-11188.723333,0.216346,False,Low,Do not prioritize Champions for TypeA style offers

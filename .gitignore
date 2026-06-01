@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.streamlit/
+
+# Raw retail data is local-only. Some source CSVs exceed GitHub's 100MB file limit.
+data/*.csv
+
+# Temporary Tableau package staging directory.
+tableau/_twbx_package/
