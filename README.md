@@ -6,7 +6,13 @@ The key principle is simple: AI can help summarize the analysis, but every numbe
 
 ## Dataset
 
-The project uses local retail transaction and campaign files in `data/`:
+The project uses Dunnhumby household retail transaction and campaign files stored locally in `data/`.
+
+Dataset source:
+
+- https://www.dunnhumby.com/source-files/?utm_source=chatgpt.com
+
+Expected local files:
 
 ```text
 data/transaction_data.csv     Household-level purchase records
